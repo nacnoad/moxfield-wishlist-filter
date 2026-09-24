@@ -1,0 +1,13 @@
+body { margin: 0; width: 360px; background: #171b23; color: #f2f4f7; font: 14px/1.45 system-ui, sans-serif; }
+main { padding: 18px; }
+h1 { margin: 0 0 10px; font-size: 20px; }
+.byline { margin: -5px 0 14px; color: #bac3d0; font-size: 12px; }
+a { color: #f0bf51; }
+p { margin: 0 0 14px; }
+label { display: block; margin-bottom: 5px; font-weight: 650; }
+textarea { box-sizing: border-box; width: 100%; padding: 9px; resize: vertical; color: #f2f4f7; background: #252b36; border: 1px solid #697586; border-radius: 6px; font: inherit; }
+input[type=file] { display: block; width: 100%; margin: 10px 0 14px; }
+button { padding: 9px 14px; border: 0; border-radius: 6px; color: #171b23; background: #f0bf51; font: inherit; font-weight: 700; cursor: pointer; }
+button:hover { background: #ffcf65; }
+#status { min-height: 20px; margin: 12px 0 0; }
+.hint { margin: 8px 0 0; color: #bac3d0; font-size: 12px; }

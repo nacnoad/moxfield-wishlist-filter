@@ -1,0 +1,24 @@
+{
+  "manifest_version": 3,
+  "name": "Moxfield Wishlist Filter",
+  "version": "0.1.4",
+  "description": "Find wishlist cards in public Moxfield collections and binders. By Dogancan Tufekcioglu.",
+  "permissions": ["storage"],
+  "action": {
+    "default_title": "Moxfield Wishlist Filter",
+    "default_popup": "popup.html"
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://moxfield.com/wishlist*", "https://www.moxfield.com/wishlist*"],
+      "js": ["wishlist-core.js", "wishlist-sync.js"],
+      "run_at": "document_idle"
+    },
+    {
+      "matches": ["https://moxfield.com/collection/*", "https://moxfield.com/binders/*", "https://www.moxfield.com/collection/*", "https://www.moxfield.com/binders/*"],
+      "js": ["wishlist-core.js", "content.js"],
+      "css": ["content.css"],
+      "run_at": "document_idle"
+    }
+  ]
+}
